@@ -1,0 +1,31 @@
+{
+  "main": [
+      {
+          "name": "Grilled Salmon",
+          "description": "A delightful plate of grilled salmon with a lemon herb seasoning.",
+          "price": "$18.99",
+          "image": "https://assets-global.website-files.com/64b4c0b677901d548fc48327/64b91de2031bd8c2c2ab24e3_Muhallabia-p-500.webp",
+          "tags": ["popular", "recommended"]
+      },
+      {
+          "name": "Steakhouse Classic",
+          "price": "$23.99",
+          "tags": ["chef's choice"]
+      }
+  ],
+  "starter": [
+      {
+          "name": "Garden Fresh Salad",
+          "price": "$5.99",
+          "tags": ["vegan", "light"]
+      }
+  ],
+  "dessert": [
+      {
+          "name": "Chocolate Lava Cake",
+          "description": "Decadent chocolate cake with a molten chocolate center, served with vanilla ice cream.",
+          "price": "$8.99",
+          "tags": ["favorite", "contains nuts"]
+      }
+  ]
+}
