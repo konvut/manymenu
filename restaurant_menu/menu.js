@@ -1,6 +1,30 @@
 document.addEventListener('DOMContentLoaded', function() {
     loadMenu('en'); // Load English menu by default
+    // Event listener for opening the modal
+    document.getElementById('tabContentContainer').addEventListener('click', function(event) {
+        if (event.target.className.includes('menu-item-image')) {
+            openModal(event.target.src, event.target.alt);
+        }
+    });
 });
+
+function openModal(imageSrc, imageAlt) {
+    let modal = document.getElementById('myModal');
+    let modalImg = document.getElementById("img01");
+    let captionText = document.getElementById("caption");
+    
+    modal.style.display = "block";
+    modalImg.src = imageSrc;
+    captionText.innerHTML = imageAlt;
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
+}
 
 let currentCategory = 'all';
 let currentLanguage = 'en';
@@ -35,12 +59,11 @@ function createCategoryTabs(categories) {
     allButton.onclick = function(event) { showItems(event, 'all', categories); };
     tabs.appendChild(allButton);
 
-    // Create tabs for each category
-    Object.keys(categories).forEach(category => {
+    categories.forEach(categoryObj => {
         let button = document.createElement('button');
         button.className = 'tab-link';
-        button.textContent = category.charAt(0).toUpperCase() + category.slice(1);
-        button.onclick = function(event) { showItems(event, category, categories); };
+        button.textContent = categoryObj.category;
+        button.onclick = function(event) { showItems(event, categoryObj.category, categories); };
         tabs.appendChild(button);
     });
 
@@ -60,24 +83,39 @@ function showItems(evt, category, categories) {
     }
 
     currentCategory = category;
-    const items = category === 'all' ? Object.values(categories).flat() : categories[category];
 
     const content = document.getElementById('tabContentContainer');
     content.innerHTML = '';
-    items.forEach(item => {
-        content.innerHTML += createMenuItemHTML(item);
-    });
+
+    if (category === 'all') {
+        // Flatten all items from all categories
+        categories.forEach(categoryObj => {
+            categoryObj.items.forEach(item => {
+                content.innerHTML += createMenuItemHTML(item);
+            });
+        });
+    } else {
+        // Find the category object and display its items
+        const categoryObj = categories.find(cat => cat.category === category);
+        if (categoryObj && categoryObj.items) {
+            categoryObj.items.forEach(item => {
+                content.innerHTML += createMenuItemHTML(item);
+            });
+        }
+    }
 
     // Clear the active filter display
     document.getElementById('activeFilter').textContent = '';
 }
 
+
 function loadMenu(language) {
     currentLanguage = language;
     fetch(`menu_${language}.json`)
         .then(response => response.json())
-        .then(categories => {
-            createCategoryTabs(categories);
+        .then(data => {
+            createCategoryTabs(data.categories);
+            displayRestaurantInfo(data)
         })
         .catch(error => {
             console.error('Error loading menu:', error);
@@ -85,8 +123,19 @@ function loadMenu(language) {
 }
 
 function filterByTag(tag, categories) {
-    const items = currentCategory === 'all' ? Object.values(categories).flat() : categories[currentCategory];
-    const filteredItems = items.filter(item => item.tags && item.tags.includes(tag));
+    let filteredItems = [];
+
+    if (currentCategory === 'all') {
+        // If 'all' categories, flatten all items from all categories and then filter
+        filteredItems = categories.flatMap(categoryObj => categoryObj.items)
+                                   .filter(item => item.tags && item.tags.includes(tag));
+    } else {
+        // Find the specific category and filter its items
+        const categoryObj = categories.find(cat => cat.category === currentCategory);
+        if (categoryObj && categoryObj.items) {
+            filteredItems = categoryObj.items.filter(item => item.tags && item.tags.includes(tag));
+        }
+    }
 
     const content = document.getElementById('tabContentContainer');
     content.innerHTML = '';
@@ -105,7 +154,7 @@ document.getElementById('tabContentContainer').addEventListener('click', functio
         const tag = event.target.textContent;
         fetch(`menu_${currentLanguage}.json`)
             .then(response => response.json())
-            .then(categories => filterByTag(tag, categories))
+            .then(data => filterByTag(tag, data.categories))
             .catch(error => console.error('Error loading menu:', error));
     }
 });
@@ -114,9 +163,34 @@ document.getElementById('tabContentContainer').addEventListener('click', functio
 function clearFilter() {
     fetch(`menu_${currentLanguage}.json`)
         .then(response => response.json())
-        .then(categories => {
-            showItems(null, currentCategory, categories);
+        .then(data => {
+            showItems(null, currentCategory, data.categories);
         })
         .catch(error => console.error('Error loading menu:', error));
         document.getElementById('filterControls').style.display = 'none';
+}
+
+function displayRestaurantInfo(data) {
+    // Display restaurant name and description
+    document.getElementById('restaurantName').textContent = data.restaurant_name || 'Restaurant Name';
+    document.getElementById('restaurantDescription').textContent = data.restaurant_description || 'Restaurant Description';
+
+    // Check for each contact detail and update if available
+    if (data.contacts) {
+        if (data.contacts.phone) {
+            document.getElementById('contactPhone').textContent = data.contacts.phone;
+        } else {
+            document.getElementById('contactPhone').textContent = '';
+        }
+
+        if (data.contacts.address) {
+            document.getElementById('contactAddress').textContent = data.contacts.address;
+        } else {
+            document.getElementById('contactAddress').textContent = '';
+        }
+    } else {
+        // Clear all contact details if none are provided
+        document.getElementById('contactPhone').textContent = '';
+        document.getElementById('contactAddress').textContent = '';
+    }
 }

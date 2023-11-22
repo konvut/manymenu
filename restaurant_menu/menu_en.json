@@ -1,166 +1,229 @@
 {
-  "Starters SP": [
-      {
-          "name": "Chicken Lollipop",
-          "description": "Normal / Spicy",
-          "price": "DHS 22 / DHS 24",
+    "categories": [
+        {
+            "category": "CHICKEN",
+            "items": [
+                {
+                    "name": "General Tso's Chicken",
+                    "price": "7.55",
+                    "description": "A delightful plate of grilled salmon with a lemon herb seasoning.",
+                    "image": "https://assets-global.website-files.com/64b4c0b677901d548fc48327/64b91de2031bd8c2c2ab24e3_Muhallabia-p-500.webp",
           "tags": ["popular", "recommended"]
-      },
-      {
-          "name": "Spring Roll 6 (PCS)",
-          "description": "Vegan / Chicken",
-          "price": "DHS 18 / DHS 22",
-          "tags": ["chef's choice"]
-      },
-      {
-        "name": "Boneless Chi Dry",
-        "price": "DHS 22"
-      },
-      {
-        "name": "Chi Fried Wings",
-        "price": "DHS 19"
-      },
-      {
-        "name": "Chicken 65 Dry",
-        "price": "DHS 19"
-      },
-      {
-        "name": "Paneer Dry Fry",
-        "price": "DHS 20"
-      },
-      {
-        "name": "Golder Fried Prawns",
-        "price": "DHS 26"
-      },
-      {
-        "name": "Dynamite Fries",
-        "price": "DHS 18"
-      },
-      {
-        "name": "Gobi Dry Fry",
-        "price": "DHS 18"
-      },
-      {
-        "name": "Prawns Chill Dry",
-        "price": "DHS 25"
-      },
-      {
-        "name": "Chilli Paneer Dry",
-        "price": "DHS 19"
-      },
-      {
-        "name": "Gobi Dry Fry",
-        "price": "DHS 18"
-      },
-      {
-        "name": "Fried Calamari (squid)",
-        "price": "DHS 20"
-      }
-  ],
-  "Dynamite SP": [
-      {
-          "name": "Dynamite Chicken",
-          "price": "DHS 20"
-      },
-      {
-        "name": "Dynamite Prawns",
-        "price": "DHS 26"
-      }
-  ],
-  "Biriyani SP": [
-      {
-        "name": "Four Square Sp. Chi. Biriyani",
-        "price": "DHS 16"
-      },
-      {
-        "name": "Banana Leaf Biriyani",
-        "description": "Veg / Egg / Chi / Beef / Mutton / Fish",
-        "price": "DHS 16"
-      },
-      {
-        "name": "Malabar Dum Biriyani",
-        "price": "DHS 16"
-      },
-      {
-        "name": "Prawns Biriyani",
-        "price": "DHS 22"
-      },
-      {
-        "name": "Family Chicken Biriyani",
-        "price": "DHS 32"
-      },
-      {
-        "name": "Sheri Biriyani",
-        "price": "DHS 30"
-      },
-      {
-        "name": "Beef Biriyani",
-        "price": "DHS 18"
-      },
-      {
-        "name": "Mutton Biriyani",
-        "price": "DHS 19"
-      },
-      {
-        "name": "Arabic Fry Biriyani",
-        "price": "DHS 18"
-      },
-      {
-        "name": "Chatty Biriyani (chi)",
-        "tags": ["dine-in only"],
-        "price": "DHS 22"
-      },
-      {
-        "name": "Ghee Rice + Chicken / Beef Curry",
-        "price": "DHS 18"
-      },
-      {
-        "name": "Normal Chi. Biriyani",
-        "price": "DHS 18"
-      },
-      {
-        "name": "King Fish Biriyani",
-        "price": "DHS 20"
-      },
-      {
-        "name": "Vegetable Biriyani",
-        "price": "DHS 13"
-      },
-      {
-        "name": "Egg Biriyani",
-        "price": "DHS 13"
-      },
-      {
-        "name": "Biriyani Rice",
-        "price": "DHS 11"
-      },
-      {
-        "name": "Ghee Rice",
-        "price": "DHS 12"
-      },
-      {
-        "name": "Jeera Rice",
-        "price": "DHS 12"
-      },
-      {
-        "name": "White Rice",
-        "price": "DHS 7.5 / 9"
-      },
-      {
-        "name": "Veg Pulao",
-        "price": "DHS 13"
-      },
-      {
-        "name": "Peas Pulao",
-        "price": "DHS 13"
-      },
-      {
-        "name": "Chicken Pulao",
-        "price": "DHS 15"
-      },
-      {
-        "name": "Broasted Biriyani",
-        "price": "DHS 20"
-      }
-  ]
+                },
+                {
+                    "name": "Sesame Chicken or Honey Chicken",
+                    "price": "7.55"
+                },
+                {
+                    "name": "Sweet & Sour Chicken",
+                    "price": "7.55"
+                },
+                {
+                    "name": "Chicken w. Broccoli",
+                    "price": "7.55"
+                },
+                {
+                    "name": "Chicken w. Hunan Sauce (or Szechuan Sauce)",
+                    "price": "7.55"
+                },
+                {
+                    "name": "Chicken w. Garlic Sauce (or Curry Sauce)",
+                    "price": "7.55"
+                },
+                {
+                    "name": "Chicken w. Cashew Nuts",
+                    "price": "7.55"
+                },
+                {
+                    "name": "Chicken w. Snow Pea (or Mushroom)",
+                    "price": "7.55"
+                },
+                {
+                    "name": "Chicken w. Mixed Vegetable",
+                    "price": "7.55"
+                },
+                {
+                    "name": "Fried Chicken Wings",
+                    "price": "9.75"
+                }
+            ]
+        },
+        {
+            "category": "BEEF",
+            "items": [
+                {
+                    "name": "Pepper Steak w. Onion",
+                    "price": "8.25"
+                },
+                {
+                    "name": "Beef w. Broccoli",
+                    "price": "8.25"
+                },
+                {
+                    "name": "Beef w. Garlic Sauce (or Curry Sauce)",
+                    "price": "8.25"
+                },
+                {
+                    "name": "Beef w. Hunan Sauce (or Szechuan Sauce)",
+                    "price": "8.25"
+                },
+                {
+                    "name": "Hot & Spicy Beef",
+                    "price": "8.25"
+                },
+                {
+                    "name": "Beef w. Mushroom (or Snow Pea)",
+                    "price": "8.25"
+                },
+                {
+                    "name": "Beef w. Mixed Vegetable",
+                    "price": "8.25"
+                },
+                {
+                    "name": "Mongolian Beef",
+                    "price": "8.25"
+                }
+            ]
+        },
+        {
+            "category": "PORK",
+            "items": [
+                {
+                    "name": "Boneless Spare Ribs",
+                    "price": "8.85"
+                },
+                {
+                    "name": "Roast Pork w. Broccoli",
+                    "price": "7.55"
+                },
+                {
+                    "name": "Roast Pork w. Mixed Vegetable",
+                    "price": "7.55"
+                }
+            ]
+        },
+        {
+            "category": "SHRIMP",
+            "items": [
+                {
+                    "name": "Shrimp w. Broccoli",
+                    "price": "8.25"
+                },
+                {
+                    "name": "Shrimp w. Garlic Sauce (or Curry Sauce)",
+                    "price": "8.25"
+                },
+                {
+                    "name": "Shrimp w. Cashew Nuts",
+                    "price": "8.25"
+                },
+                {
+                    "name": "Shrimp w. Hunan Sauce (or Szechuan Sauce)",
+                    "price": "8.25"
+                },
+                {
+                    "name": "Shrimp w. Mixed Vegetable",
+                    "price": "8.25"
+                },
+                {
+                    "name": "Shrimp w. Lobster Sauce",
+                    "price": "8.25"
+                },
+                {
+                    "name": "Fried Baby Shrimp (15)",
+                    "price": "8.25"
+                },
+                {
+                    "name": "Fried Fish (2)",
+                    "price": "8.25"
+                }
+            ]
+        },
+        {
+            "category": "LO MEIN",
+            "items": [
+                {
+                    "name": "Chicken Lo Mein (or Pork)",
+                    "price": "7.25"
+                },
+                {
+                    "name": "Shrimp Lo Mein (or Beef)",
+                    "price": "7.25"
+                },
+                {
+                    "name": "House Special Lo Mein",
+                    "price": "7.25"
+                },
+                {
+                    "name": "Vegetable Lo Mein",
+                    "price": "7.25"
+                }
+            ]
+        },
+        {
+            "category": "CHOW MEIN",
+            "items": [
+                {
+                    "name": "Chicken Chow Mein (or Pork)",
+                    "price": "7.25"
+                },
+                {
+                    "name": "Shrimp Chow Mein (or Beef)",
+                    "price": "7.25"
+                },
+                {
+                    "name": "House Special Chow Mein",
+                    "price": "7.25"
+                },
+                {
+                    "name": "Mixed Vegetable Chow Mein",
+                    "price": "7.25"
+                }
+            ]
+        },
+        {
+            "category": "EGG FOO YOUNG",
+            "items": [
+                {
+                    "name": "Chicken Egg Foo Young (or Pork)",
+                    "price": "7.55"
+                },
+                {
+                    "name": "Shrimp Egg Foo Young (or Beef)",
+                    "price": "7.55"
+                },
+                {
+                    "name": "House Special Egg Foo Young",
+                    "price": "7.55"
+                },
+                {
+                    "name": "Mixed Vegetable Egg Foo Young",
+                    "price": "7.55"
+                }
+            ]
+        },
+        {
+            "category": "VEGETABLES",
+            "items": [
+                {
+                    "name": "Plain Broccoli",
+                    "price": "7.25"
+                },
+                {
+                    "name": "Mixed Vegetables",
+                    "price": "7.25"
+                },
+                {
+                    "name": "Bean Curd w. Mixed Vegetable",
+                    "price": "7.25"
+                }
+            ]
+        }
+    ],
+    "restaurant_name": "NEW TOP CHINA",
+    "restaurant_description": "TASTY Take Out & Dine In, HEALTHY",
+    "contacts": {
+        "phone": "(919) 401-8406, (919) 401-8407",
+        "address": "5324 New Hope Commons Dr. Suite 301 Durham NC 27707"
+    }
 }
