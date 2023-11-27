@@ -1,0 +1,81 @@
+{
+	"categories": [
+		{
+			"category": "Cafés",
+			"items": [
+				{"name": "Espresso", "price": "40"},
+				{"name": "Doble", "price": "50"},
+				{"name": "Americano", "price": "50"},
+				{"name": "Coffee", "price": "50"},
+				{"name": "Late", "price": "60"},
+				{"name": "Capuccino", "price": "60"}
+			]
+		},
+		{
+			"category": "Bebidas frías",
+			"items": [
+				{"name": "Coffee frio", "price": "50"},
+				{"name": "Frappe", "price": "60"},
+				{"name": "Late Frio", "price": "60"},
+				{"name": "Sodas", "price": "35"}
+			]
+		},
+		{
+			"category": "Jugos Frescos",
+			"items": [
+				{"name": "Naranja", "price": "45"},
+				{"name": "Toronja", "price": "45"}
+			]
+		},
+		{
+			"category": "Smoothies",
+			"items": [
+				{"name": "Tahiti", "description": "naranja, piña y fresas", "price": "60"},
+				{"name": "Bora Bora", "description": "naranja, piña manzana, limón", "price": "60"},
+				{"name": "Moorea", "description": "banana, piña, leche de coco, yogurt", "price": "69"},
+				{"name": "Maui", "description": "mango, coco, leche de soya, yogurt", "price": "65"},
+				{"name": "Waikiki", "description": "fresa, frambuesa, arandano", "price": "69"},
+				{"name": "Fiji", "description": "papaya, melon, orange, lime", "price": "69"}
+			]
+		},
+		{
+			"category": "Desayunos",
+			"items": [
+				{"name": "Huevos Revueltos", "description": "Jamon, salchicha, nopal, frijoles refritos", "price": "75"},
+				{"name": "Huevos Motuleños", "description": "2 huevos fritos sobre tortilla, salsa roja, jamon y platano frito", "price": "95"},
+				{"name": "Huevos Rancheros", "description": "2 huevos fritos sobre tortilla, Salsa roja, frijoles refritos", "price": "85"},
+				{"name": "Sandwich de Huevo", "description": "Huevos revueltos con tocino, salchicha, Aguacate, ensalada", "price": "100"},
+				{"name": "Club Sandwich", "description": "Jamon de Pavo, Tocino, Pollo, Queso, Lechuga, Papas Fritas", "price": "120"},
+				{"name": "Papas mix", "description": "Papas fritas, Huevo, Ensalada", "price": "95"},
+				{"name": "Chilaquiles con Pollo", "price": "115"},
+				{"name": "Chilaquiles con Huevo", "price": "95"}
+			]
+		},
+		{
+			"category": "A cualquier hora",
+			"items": [
+				{"name": "TIKI Taco", "description": "3 tacos de puerco", "price": "95"},
+				{"name": "Taco Arrachera", "description": "3 tacos", "price": "145"},
+				{"name": "Baja Taco", "description": "3 shrimp taco", "price": "150"},
+				{"name": "Hamburguesa Viva Tikila", "description": "Arrachera, Jamon de Pavo, Queso oaxaca, Tocino, Lechuga, pimiento, aceituna, huevo frito", "price": "190"},
+				{"name": "Hamburguesa de Pollo", "description": "Pechuga de Pollo, Queso Oaxaca, cebolla al teriyaki, piña asada", "price": "140"},
+				{"name": "Guacamole tradicional", "price": "85"},
+				{"name": "Guacamole TIKI", "price": "95"},
+				{"name": "Arrachera Musubi", "description": "3 nigiris con Tocino, arrachera asada con salsa teriyaki", "price": "135"},
+				{"name": "Bruschetta Huli Huli", "description": "Pechuga de Pollo, cebolla, piña, miel, mostaza, Platano frito", "price": "140"},
+				{"name": "Aguachile de Camaron", "description": "Camarones al coco, cilantro, rabano, gengibre, chile negro", "price": "165"},
+				{"name": "Poke Tuna", "description": "filete de Atun marinado con salsa de soya, salsa tabasco, aguacate, pepino, Arroz al coco", "price": "190"},
+				{"name": "Lumi Lumi de salmon", "description": "Salmon Marinado al mango, Piña, Aceite de aceituna picante", "price": "165"},
+				{"name": "Lumi Lumi de Camaron", "description": "Camarones con limon amarillo, rabano, Chile serrano, Aceite de ajonjoli", "price": "155"},
+				{"name": "Camarones al Coco", "description": "Camarones capeados al coco, salsa de mango picante, sweet potato pure", "price": "195"}
+			]
+		}
+	],
+	"restaurant_name": "VIVA TIKILA",
+	"restaurant_description": "A vibrant and inviting dining experience offering a wide variety of delicious flavors and unique dishes.",
+	"contacts": {
+		"phone": "[Insert Phone Number]",
+		"email": "[Insert Email Address]",
+		"address": "[Insert Address]"
+	}
+}
