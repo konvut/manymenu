@@ -1,0 +1,81 @@
+{
+    "categories": [
+        {
+            "category": "Cafés",
+            "items": [
+                {"name": "Espresso", "price": "40"},
+                {"name": "Double", "price": "50"},
+                {"name": "Americano", "price": "50"},
+                {"name": "Coffee", "price": "50"},
+                {"name": "Latte", "price": "60"},
+                {"name": "Cappuccino", "price": "60"}
+            ]
+        },
+        {
+            "category": "Cold Drinks",
+            "items": [
+                {"name": "Iced Coffee", "price": "50"},
+                {"name": "Frappe", "price": "60"},
+                {"name": "Iced Latte", "price": "60"},
+                {"name": "Sodas", "price": "35"}
+            ]
+        },
+        {
+            "category": "Fresh Juices",
+            "items": [
+                {"name": "Orange", "price": "45"},
+                {"name": "Grapefruit", "price": "45"}
+            ]
+        },
+        {
+            "category": "Smoothies",
+            "items": [
+                {"name": "Tahiti", "description": "orange, pineapple, and strawberries", "price": "60"},
+                {"name": "Bora Bora", "description": "orange, pineapple, apple, lemon", "price": "60"},
+                {"name": "Moorea", "description": "banana, pineapple, coconut milk, yogurt", "price": "69"},
+                {"name": "Maui", "description": "mango, coconut, soy milk, yogurt", "price": "65"},
+                {"name": "Waikiki", "description": "strawberry, raspberry, blueberry", "price": "69"},
+                {"name": "Fiji", "description": "papaya, melon, orange, lime", "price": "69"}
+            ]
+        },
+        {
+            "category": "Breakfasts",
+            "items": [
+                {"name": "Scrambled Eggs", "description": "Ham, sausage, cactus, refried beans", "price": "75"},
+                {"name": "Motul Style Eggs", "description": "2 fried eggs on tortilla, red sauce, ham, and fried banana", "price": "95"},
+                {"name": "Ranch Style Eggs", "description": "2 fried eggs on tortilla, red sauce, refried beans", "price": "85"},
+                {"name": "Egg Sandwich", "description": "Scrambled eggs with bacon, sausage, avocado, salad", "price": "100"},
+                {"name": "Club Sandwich", "description": "Turkey ham, bacon, chicken, cheese, lettuce, french fries", "price": "120"},
+                {"name": "Mix Fries", "description": "French fries, egg, salad", "price": "95"},
+                {"name": "Chicken Chilaquiles", "price": "115"},
+                {"name": "Egg Chilaquiles", "price": "95"}
+            ]
+        },
+        {
+            "category": "Anytime Meals",
+            "items": [
+                {"name": "TIKI Taco", "description": "3 pork tacos", "price": "95"},
+                {"name": "Arrachera Taco", "description": "3 tacos", "price": "145"},
+                {"name": "Baja Taco", "description": "3 shrimp tacos", "price": "150"},
+                {"name": "Viva Tikila Burger", "description": "Arrachera, turkey ham, Oaxaca cheese, bacon, lettuce, pepper, olive, fried egg", "price": "190"},
+                {"name": "Chicken Burger", "description": "Chicken breast, Oaxaca cheese, teriyaki onions, grilled pineapple", "price": "140"},
+                {"name": "Traditional Guacamole", "price": "85"},
+                {"name": "TIKI Guacamole", "price": "95"},
+                {"name": "Arrachera Musubi", "description": "3 nigiris with bacon, grilled arrachera with teriyaki sauce", "price": "135"},
+                {"name": "Huli Huli Bruschetta", "description": "Chicken breast, onion, pineapple, honey, mustard, fried banana", "price": "140"},
+                {"name": "Shrimp Aguachile", "description": "Coconut shrimp, cilantro, radish, ginger, black chili", "price": "165"},
+                {"name": "Tuna Poke", "description": "Marinated tuna fillet with soy sauce, tabasco sauce, avocado, cucumber, coconut rice", "price": "190"},
+                {"name": "Salmon Lomi Lomi", "description": "Mango-marinated salmon, pineapple, spicy olive oil", "price": "165"},
+                {"name": "Shrimp Lomi Lomi", "description": "Shrimp with yellow lemon, radish, serrano chili, sesame oil", "price": "155"},
+                {"name": "Coconut Shrimp", "description": "Coconut-battered shrimp, spicy mango sauce, sweet potato puree", "price": "195"}
+            ]
+        }
+    ],
+    "restaurant_name": "VIVA TIKILA",
+    "restaurant_description": "A vibrant and inviting dining experience offering a wide variety of delicious flavors and unique dishes.",
+    "contacts": {
+        "phone": "[Insert Phone Number]",
+        "email": "[Insert Email Address]",
+        "address": "[Insert Address]"
+    }
+}
